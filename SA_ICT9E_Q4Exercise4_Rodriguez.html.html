@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Darumadrop+One&display=swap" rel="stylesheet">
+
+	<title>Simple Calculator</title>
+
+	<style type="text/css">
+
+		h1{
+			font-family: 'Darumadrop One', cursive;
+			background-color: #EEEAE3;
+			font-size: 300%;
+		}
+
+		h2{
+			font-family: 'Anton', sans-serif;
+		}
+
+		body{
+			background-color: #F2F2F0;
+		}
+
+		label{
+			font-family: 'Anton', sans-serif;	
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<body style="background-color: #FEF5E7;">
+	<h1>Measurement Calculator</h1>
+	<br>
+	<h2>Solve for measurements</h2>
+	<hr>
+	<form action="">
+	
+		<label for="first value">First Value:</label>
+		   <input type="Enter First Number" id="first"><br><br>
+
+		<label for="second value">Second Value:</label>
+		   <input type="Enter second number" id="second"><br><br>
+
+		   
+		<button type="submit" onclick="Compute()">Solve</button>   
+	</form>
+
+	<script>
+		function Compute(){
+
+			var first = document.getElementById("first").value;
+			var second = document.getElementById("second").value;
+			var sum = Number (first) + Number (second);
+			var difference = Number (first) - Number (second);
+		
+			window.alert("The sum is: " + sum + "," + "The difference is:" + difference)
+			;
+			}
+	</script>
+</body>
+</html>
